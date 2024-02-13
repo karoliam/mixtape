@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Heart from "react-animated-heart";
-import '../css/HeartComponent.css'
+import '../css/HeartComponent.css';
+
 export default function HeartComponent() {
   const [isClick, setClick] = useState(false);
 
@@ -13,7 +14,7 @@ export default function HeartComponent() {
         >
         <p>Moi Nuppunen! Klikkaa tästä {'<3'}</p>
         </a>
-      
+        <p style={{visibility: !isClick ? 'hidden' : 'visible'}}>p.s. Rakastan sua ♡</p>
     </div>
   );
 }
